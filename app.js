@@ -15,7 +15,7 @@ const User = require("./models/user");
 
 mongoose.set("strictQuery", true);
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb+srv://vshalsha1234:HRKM6I0UXD5v2Alw@cluster0.jrsmiai.mongodb.net/mydb")
   .then(() => console.log("DB Connected"))
   .catch((err) => console.log(err));
 
